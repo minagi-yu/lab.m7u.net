@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <div class="copylights">
+    <small>&copy; {{ site.time | date:"%Y" }} {% if site.author -%}
+      {{ site.author.name | escape }}
+      {%- else -%}
+      {{ site.title | escape }}
+      {%- endif -%}</small>
+  </div>
+</footer>
