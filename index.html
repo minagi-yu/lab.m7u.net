@@ -4,48 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css>
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css">
+  <link rel=" icon" href="favicon.ico">
   <title>みなゆらぼ</title>
 </head>
 
 <body>
 
   <header class="site-header">
-    <a class="site-meta" href="https://lab.m7u.net/">
-      <div class="site-logo">
-        <img src="minayulab.svg" alt="みなゆらぼ" />
-      </div>
+    <a class="site-logo" href="/">
+      <img src="minayulab.svg" alt="みなゆらぼ" />
     </a>
   </header>
 
-  <main>
-    <div class="title" >
-      技術系サークル
+  <main class="site-contents">
+    <div class="title">
+      <span class="sub">技術系サークル</span>
       <h1><img src="minayulab.svg" alt="みなゆらぼ" /></h1>
     </div>
-    <div class="products">
+    <section class="products">
       <h2>製作物</h2>
-      <article>
-        <h3>蛍光表示管ロジックIC時計キット</h3>
-        蛍光表示管LD8195と4000シリーズ汎用ロジックICを使った電子工作キット
-      </article>
-      <article>
-        <h3>74シリーズ暗記帳</h3>
-        74HCシリーズの中でよく使われるもの100種類の暗記帳
-      </article>
-    </div>
-    <div class="events">
+      <div class="card-container">
+        <article class="link-card">
+          <a href="./products/vfd-clock/index.html">
+            <img class="card-image" src="./products/vfd-clock/vfd-clock.jpg" alt="VFD時計">
+            <div class="card-text">
+              <h3 class="card-title">蛍光表示管ロジックIC時計キット</h3>
+              <div class="card-description">
+                蛍光表示管LD8195と4000シリーズ汎用ロジックICを使った時計の電子工作キット
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="link-card">
+          <a href="./products/logic-ic-card/index.html">
+            <img class="card-image" src="./products/logic-ic-card/logic-ic-card.jpg" alt="74シリーズ暗記帳">
+            <div class="card-text">
+              <h3 class="card-title">74シリーズ暗記帳</h3>
+              <div class="card-description">
+                74HCシリーズの中でよく使われるもの100種類の暗記帳
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section class="events">
       <h2>イベント</h2>
-      <article>
-        <h3>コミックマーケット104</h3>
-        2024年　夏コミ
-      </article>
-      <article>
-        <h3>コミックマーケット103</h3>
-        2023年　冬コミ
-      </article>
-    </div>
+      <div class="card-container">
+        <article class="link-card">
+          <a href="./events/c105/index.html">
+            <img class="card-image" src="./events/c105/c105.png" alt="C105">
+            <div class="card-text">
+              <h3 class="card-title">コミックマーケット105</h3>
+              <div class="card-description">
+                2024年　冬コミ
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="link-card">
+          <a href="./events/c104/index.html">
+            <img class="card-image" src="./events/c104/c104.png" alt="C104">
+            <div class="card-text">
+              <h3 class="card-title">コミックマーケット104</h3>
+              <div class="card-description">
+                2024年　夏コミ
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="link-card">
+          <a href="./events/c103/index.html">
+            <img class="card-image" src="./events/c103/c103.png" alt="C103">
+            <div class="card-text">
+              <h3 class="card-title">コミックマーケット103</h3>
+              <div class="card-description">
+                2023年　冬コミ
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

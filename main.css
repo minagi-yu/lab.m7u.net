@@ -1,0 +1,173 @@
+@import "color.css";
+
+/**
+ * Reset some basic elements
+ */
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  max-width: 1140px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: max-content auto max-content;
+}
+
+body>header {
+  grid-area: 1;
+  box-shadow: 0px 3px 25px rgba(80, 80, 80, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  body>header {
+    box-shadow: 0px 3px 25px rgba(80, 80, 80, 0.626);
+  }
+}
+
+body>main {
+  grid-area: 2;
+}
+
+body>footer {
+  grid-area: 3;
+}
+
+/* Header */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  /* background: linear-gradient(90deg, #FF9A77 20%, #79DAF3 20%); */
+  box-shadow: 0 0 10px var(--color-minayulab-blue);
+}
+
+.site-logo {
+  display: block;
+  border-radius: 5px;
+  padding: 0.5rem;
+  /* background-color: var(--color-white);
+  box-shadow: 0 0 10px var(--color-white); */
+}
+
+.site-logo img {
+  display: block;
+  height: 2rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--color-minayulab-green);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  color: var(--color-white);
+}
+
+/* Title */
+
+.title {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.title .sub {
+  font-size: 1.5rem;
+}
+
+.title h1 img {
+  display: inline-block;
+  height: 5rem;
+}
+
+/* Main */
+
+.site-contents {
+  background-image: url("seedling.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  padding: 1rem 1rem 10rem 1rem;
+}
+
+.site-contents h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.link-card {
+  flex-grow: 1;
+  max-width: 30%;
+  min-width: 20rem;
+  border: 2px solid var(--color-light-grey);
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px hsla(0, 0%, 75%, 0.5);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+}
+
+.link-card a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.card-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.card-text {
+  margin: 1rem;
+}
