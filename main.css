@@ -109,7 +109,8 @@ body>footer {
 
 .title h1 img {
   display: inline-block;
-  height: 5rem;
+  max-height: 5rem;
+  max-width: 100%;
 }
 
 /* Main */
@@ -122,7 +123,7 @@ body>footer {
   padding: 1rem 1rem 10rem 1rem;
 }
 
-.site-contents h2 {
+.card-list h2 {
   text-align: center;
   font-size: 2rem;
   margin: 2rem 0;
