@@ -172,3 +172,11 @@ body>footer {
 .card-text {
   margin: 1rem;
 }
+
+.link-card li {
+  display: inline-block;
+  padding: 0.1rem 0.3rem;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 5px;
+}
