@@ -132,23 +132,26 @@ body>footer {
   flex-grow: 1;
   max-width: 30%;
   min-width: 20rem;
-  border: 2px solid var(--color-light-grey);
+  border: 2px solid var(--color-blue);
   border-radius: 10px;
   box-shadow: 0px 2px 2px hsla(0, 0%, 75%, 0.5);
   overflow: hidden;
   margin: 0;
   padding: 0;
   background-color: var(--color-bg);
+  display: flex;
 }
 
 .link-card:hover {
-  filter: brightness(103%);
+  filter: brightness(95%);
+  box-shadow: none;
 }
 
 .link-card a {
   display: block;
   text-decoration: none;
   color: var(--color-text);
+  flex-grow: 1;
 }
 
 .card-image {
