@@ -14,6 +14,11 @@ img {
   max-height: 100%;
 }
 
+.site-contents img {
+  display: block;
+  margin: auto;
+}
+
 .product-title img {
   margin: 3rem;
   box-sizing: border-box;
