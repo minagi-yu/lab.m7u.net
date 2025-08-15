@@ -1,0 +1,12 @@
+@page {
+  size: portrait;
+}
+
+@page landscape-page {
+  page-orientation: rotate-left;
+}
+
+
+.no-print {
+  display: none;
+}
