@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/article.css">
+  <link rel="icon" href="/favicon.ico">
+  <title>チャタリング除去　スイッチDIP化基板 - みなゆらぼ</title>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="site-logo" href="/">
+      <img src="/minayulab.svg" alt="みなゆらぼ" />
+    </a>
+  </header>
+
+  <main class="site-contents">
+    <div class="product-title">
+      <img src="main.jpeg">
+      <h1>チャタリング除去　スイッチDIP化基板</h1>
+    </div>
+    <div class="product-description">
+      <p>スイッチ、CRローパスフィルター、シュミットトリガーインバーターを8ピンDIPサイズに実装できる基板です。</p>
+    </div>
+    <h2>特徴</h2>
+    <p>
+    <ul>
+      <li>スライドスイッチとタクトスイッチどちらも対応</li>
+      <li>スライドスイッチは横向き、縦向きどちらでも取り付けが可能</li>
+      <li>細ピンヘッダだけではなく、通常の太いピンヘッダにも対応</li>
+    </ul>
+    </p>
+    <h2>部品</h2>
+    <p>
+      コンデンサと抵抗はすべて1608サイズ（mm）です。
+    </p>
+    <p>
+      表で2行になっているスイッチとICは、お好みでどちらかを選択してください。シュミットトリガーインバーターICを、4000シリーズのロジックICの「BU4S584G2」にすると16Vまで使えます。74シリーズの「TC7S14F」にすると6Vまでです。
+    </p>
+    <p>
+      スライドスイッチを縦に実装する際は、ピンヘッダや連結ソケットの中央2本が干渉します。ピンを切り取るか抜き取ってから実装してください。
+    </p>
+    <p>
+    <table>
+      <caption>部品</caption>
+      <tr>
+        <th>記号</th>
+        <th>種類</th>
+        <th>型番・値</th>
+        <th>数</th>
+        <th>備考</th>
+      </tr>
+      <tr>
+        <td>C1, C2</td>
+        <td>コンデンサ</td>
+        <td>100nF(0.1µF)</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>R1</td>
+        <td>抵抗</td>
+        <td>10kΩ</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>R2</td>
+        <td>抵抗</td>
+        <td>10kΩ</td>
+        <td>1</td>
+        <td>※1</td>
+      </tr>
+      <tr>
+        <td rowspan="2">SW1</td>
+        <td rowspan="2">スイッチ</td>
+        <td>SSSS213202</td>
+        <td rowspan="2">1</td>
+        <td>スライドスイッチ</td>
+      </tr>
+      <tr>
+        <td>TS-06104</td>
+        <td>タクトスイッチ</td>
+      </tr>
+      <tr>
+        <td rowspan="2">U1</td>
+        <td rowspan="2">IC</td>
+        <td>BU4S584G2</td>
+        <td rowspan="2">1</td>
+        <td>16Vまで</td>
+      </tr>
+      <tr>
+        <td>TC7S14F</td>
+        <td>6Vまで</td>
+      </tr>
+    </table>
+    </p>
+    <p>
+      ※1：うちの環境では問題ないことを確認していますが、10kΩだと時定数が1msと少し短いです。もし、チャタリングが発生する場合は100kΩに変更してください
+    </p>
+    <p>
+    <figure>
+      <img src="qr.png" style="max-height: 200px;">
+      <figcaption>
+        <a
+          href="https://akizukidenshi.com/catalog/quickorder/blanketorder.aspx?regist_goods=113374+1%0D%0A130355+1%0D%0A105043+1%0D%0A115969+9%0D%0A130068+9%0D%0A114737+2%0D%0A104392+18&blanketorder=%E8%B2%B7%E3%81%84%E7%89%A9%E3%81%8B%E3%81%94%E3%81%AB%E5%85%A5%E3%82%8C%E3%82%8B">
+          必要な部品を秋月電子の買い物かごへ入れる</a>
+        （選択の両方が入るので、片方は削除して購入してください）
+      </figcaption>
+    </figure>
+    </p>
+    <h2>部品配置図</h2>
+    <h3>表（タクトスイッチ）</h3>
+    <p>
+      <img src="omote_push.png" style="max-height: 10rem;">
+    </p>
+    <h3>表（スライドスイッチ）</h3>
+    <p>
+      <img src="omote_slide.png" style="max-height: 9rem;">
+    </p>
+    <h3>裏</h3>
+    <p>
+      <img src="ura.png" style="max-height: 8rem;">
+    </p>
+    <h3>備考</h3>
+    <p>
+      表面配線は下図のようになっているため、隣接するタクトスイッチ用パッドがショートしても問題ありません。
+    </p>
+    <p>
+      <img src="haisen.png" style="max-height: 10rem;">
+    </p>
+    <h2>回路図</h2>
+    <p>
+      <img src="schematic.svg" style="max-height: 10rem;">
+    </p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="copylights">
+      <small>&copy; 2024 みなゆらぼ</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>
