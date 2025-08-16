@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/article.css">
+  <link rel="icon" href="/favicon.ico">
+  <title>タイトル - みなゆらぼ</title>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="site-logo" href="/">
+      <img src="/minayulab.svg" alt="みなゆらぼ" />
+    </a>
+  </header>
+
+  <main class="site-contents">
+    <div class="product-title">
+      <img src="./main.jpeg">
+      <h1>電圧切り替え式　安定化電源</h1>
+    </div>
+    <div class="product-description">
+      <p>汎用ロジックICでつくった電圧切り替え式の安定化電源です。</p>
+    </div>
+    <h2>仕様</h2>
+    <p>
+      最大8つの電圧の切り替えができるようにした安定化電源基板です。電圧の切り替えにはマイコンを使わず、ロジックICで行っています。過電流保護回路があり、過電流が流れると自動で出力をOFFにします。
+    </p>
+    <p>
+    <dl>
+      <dt>入力電圧</dt>
+      <dd>最大DC30V</dd>
+      <dt>出力電圧可変範囲</dt>
+      <dd>約1.5V～25V（入力電圧は出力電圧から+5V程度必要です）</dd>
+      <dt>電流制限</dt>
+      <dd>標準　約270mA（R8が2.2Ωのとき）</dd>
+    </dl>
+    </p>
+    <h2>部品表</h2>
+    <table>
+      <tr>
+        <th>記号</th>
+        <th>種類</th>
+        <th>品名</th>
+        <th>数</th>
+        <th>備考</th>
+      </tr>
+      <tr>
+        <td>C1,2,3,5,6,7,9,10,11,12,13</td>
+        <td>積層セラミックコンデンサ</td>
+        <td>100nF(0.1µF) 50V</td>
+        <td>11</td>
+        <td>ピン間5mm</td>
+      </tr>
+      <tr>
+        <td>C4,14</td>
+        <td>電解コンデンサ</td>
+        <td>100µF 50V</td>
+        <td>2</td>
+        <td>直径8mmピン間3.5mm</td>
+      </tr>
+      <tr>
+        <td>C8</td>
+        <td>電解コンデンサ</td>
+        <td>10µF 50V</td>
+        <td>1</td>
+        <td>直径5mmピン間2mm</td>
+      </tr>
+      <tr>
+        <td>D1,2,3,4,6,7,10,11,12,13</td>
+        <td>LED</td>
+        <td>φ5mm</td>
+        <td>10</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>D5</td>
+        <td>整流ダイオード</td>
+        <td>1N4007</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>D8</td>
+        <td>定電流ダイオード</td>
+        <td>CRD E-103</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>D9</td>
+        <td>スイッチングダイオード</td>
+        <td>1SS178</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>J1</td>
+        <td>DCジャック</td>
+        <td>MJ-179PH</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>J2,5</td>
+        <td></td>
+        <td>B2B-XH-A</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>J4</td>
+        <td>バナナジャック</td>
+        <td>MK-626(赤)</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>J6</td>
+        <td>バナナジャック</td>
+        <td>MK-626(黒)</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Q1</td>
+        <td>トランジスタ</td>
+        <td>2SA1015</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Q2,4,5,6,7,8,9,10,11,12</td>
+        <td>トランジスタ</td>
+        <td>2SC1815</td>
+        <td>10</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Q3</td>
+        <td>トランジスタ</td>
+        <td>2SA1020</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>R1,2,3,9,10,15,17,18,19,20,23,25,26,27,29,31,32,33,34,36,38,39,40</td>
+        <td>抵抗</td>
+        <td>10kΩ</td>
+        <td>23</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>R4,5,6</td>
+        <td>抵抗</td>
+        <td>100kΩ</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>R7,12,14,16,22,24,28,30,35,37</td>
+        <td>抵抗</td>
+        <td>※1</td>
+        <td>10</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>R8</td>
+        <td>抵抗</td>
+        <td>2.2Ω</td>
+        <td>1</td>
+        <td>※2</td>
+      </tr>
+      <tr>
+        <td>R11</td>
+        <td>抵抗</td>
+        <td>2.2kΩ 1W</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>R13</td>
+        <td>抵抗</td>
+        <td>1kΩ</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>R21</td>
+        <td>抵抗</td>
+        <td>220Ω</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>RV1</td>
+        <td>半固定抵抗</td>
+        <td>GF063P 100Ω</td>
+        <td>1</td>
+        <td>1.5V用　※3</td>
+      </tr>
+      <tr>
+        <td>RV2</td>
+        <td>半固定抵抗</td>
+        <td>GF063P 5kΩ</td>
+        <td>1</td>
+        <td>15V用　※3</td>
+      </tr>
+      <tr>
+        <td>RV3,5</td>
+        <td>半固定抵抗</td>
+        <td>GF063P 500Ω</td>
+        <td>2</td>
+        <td>3, 3.3V用　※3</td>
+      </tr>
+      <tr>
+        <td>RV4</td>
+        <td>半固定抵抗</td>
+        <td>GF063P 3kΩ</td>
+        <td>1</td>
+        <td>12V用　※3</td>
+      </tr>
+      <tr>
+        <td>RV6</td>
+        <td>半固定抵抗</td>
+        <td>GF063P 2kΩ</td>
+        <td>1</td>
+        <td>9V用　※3</td>
+      </tr>
+      <tr>
+        <td>RV7,8</td>
+        <td>半固定抵抗</td>
+        <td>GF063P 1kΩ</td>
+        <td>2</td>
+        <td>5, 6V用※3</td>
+      </tr>
+      <tr>
+        <td>RY1</td>
+        <td>リレー</td>
+        <td>EA2-12NU</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>SW1,2,3</td>
+        <td>タクトスイッチ</td>
+        <td>6mm</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>U1</td>
+        <td>シュミットトリガNAND</td>
+        <td>4093B</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>U2</td>
+        <td>三端子レギュレータ</td>
+        <td>LP2950-5.0</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>U3</td>
+        <td>D-FF</td>
+        <td>4013B</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>U4</td>
+        <td>10進カウンタ</td>
+        <td>4017B</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>U5</td>
+        <td>フォトカプラ</td>
+        <td>TLP785</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>U6</td>
+        <td>3ステートバッファ</td>
+        <td>74HC541</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>U7</td>
+        <td>可変三端子レギュレータ</td>
+        <td>LM317</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>放熱器</td>
+        <td>15PB054-01050</td>
+        <td></td>
+        <td>固定ピン間30mmであれば他のものでも可</td>
+      </tr>
+    </table>
+    <p>
+      ※1：基板上にRLEDと印刷してあります。LED用の電流制限抵抗なのでお好みの明るさに調整してください。4000シリーズCMOS ICから出力しているLEDは、数mAの出力電流が上限です。
+    </p>
+    <p>
+      ※2：基板上にRlimと印刷してあります。出力のトリップ電流（=0.6/Rlim）を決める抵抗です。2.2Ω（270mA）を標準に設計してあります。電流変更する場合はトリップ回路の定数も変更する必要があるかもしれません。
+    </p>
+    <p>
+      ※3：電圧設定を調整するための半固定抵抗器です。設定電圧をV、半固定抵抗器の値をRとすると、R=220×10k×(V-1.25)÷(220×(1.25-V)+10k×1.25)で計算できる値より少し大きい半固定抵抗器を選んでください。目安として、～1.5V：100Ω、～3.5V：500Ω、～6V：1kΩ、～9V：2kΩ、～12V：3kΩ、～18V：5kΩ、それ以上V：10kΩです。
+    </p>
+    <p>
+    <figure>
+      <img src="qr.png" style="max-height: 200px;">
+      <figcaption>
+        <a
+          href="https://akizukidenshi.com/catalog/quickorder/blanketorder.aspx?regist_goods=110147+11%0D%0A117905+2%0D%0A117897+1%0D%0A111655+10%0D%0A108332+1%0D%0A100185+1%0D%0A107783+1%0D%0A106568+1%0D%0A112247+2%0D%0A110355+1%0D%0A110356+1%0D%0A106734+1%0D%0A106477+1%0D%0A108745+1%0D%0A125103+1%0D%0A125104+1%0D%0A114268+1%0D%0A107983+1%0D%0A125102+1%0D%0A125221+1%0D%0A114897+1%0D%0A114904+1%0D%0A114900+2%0D%0A114903+1%0D%0A114902+1%0D%0A114901+2%0D%0A114244+1%0D%0A103647+3%0D%0A115803+1%0D%0A108750+1%0D%0A114210+1%0D%0A115115+1%0D%0A107554+1%0D%0A103632+1%0D%0A108679+1%0D%0A105051+1&blanketorder=%E8%B2%B7%E3%81%84%E7%89%A9%E3%81%8B%E3%81%94%E3%81%AB%E5%85%A5%E3%82%8C%E3%82%8B">
+          必要な部品を秋月電子の買い物かごへ入れる</a>
+      </figcaption>
+    </figure>
+    </p>
+    <h2>製作</h2>
+    <p>
+      基板の印刷と部品表を対比させながら、背の低い部品から取り付けを行ってください。<br>
+      電圧の切り替えは、SELECTスイッチを押すと、左から順に切り替わっていきます。左側にある半固定抵抗を小さい値にすると、低い電圧から順に切り替えることが可能です。
+    </p>
+    <p>
+      電圧表示のLEDの下部に電圧書き込み用のシルク印刷をしてありますので、決めた電圧を書き込んでください。<br>
+      <img src="voltage.png" style="max-height: 2rem;">
+    </p>
+    <p>
+      J2、J5のコネクタは基板外部へ繋ぐとき用のものです。基板単体で使う場合は必要ありません。
+    </p>
+    <p>
+      ●電圧切り替え数●
+      回路図で74HC541の出力Yに各々つながっている、抵抗3つ、トランジスタ1つ、LED１つ、半固定抵抗器1つが出力電圧1つを決定するひとまとまりの回路です。
+      電圧の切り替え数が8つより少なくても良い場合は、このひとまとまりの回路を左詰めで実装し、右側は実装しなくても大丈夫です。
+      裏面のJP1～JP7で電圧の切り替え数を決定します。8種類すべて切り替える場合は、8と書いてあるJP7をはんだジャンパーしてください。
+    </p>
+    <p>
+      ※A基板サイズ（155×114mm）にしてあります。基板保護にA基板用アクリルパネルなどが使えます。
+    </p>
+    <h2>使い方</h2>
+    <p>
+    <ol>
+      <li>DCジャックに最大出力電圧+5V以上の電源をつなぎます。</li>
+      <li>POWERスイッチを押して、POWER LEDがつけば本体の電源が入ります。</li>
+      <li>SELECTスイッチを何度か押して、出力させたい電圧に合わせます。</li>
+      <li>OUTPUTスイッチを押して、OUTPUT LEDがつけば電圧が出力されます。</li>
+    </ol>
+    </p>
+    <p>
+    <ul>
+      <li>
+        初回は電圧をひとつずつ切り替えて出力電圧を測定し、半固定抵抗で電圧合わせしてください。
+      </li>
+      <li>
+        出力中にSELECTスイッチを押すと、電圧の誤印可防止のため出力が切れるようになっています。 スイッチを押した時点で出力が切れ、電圧の切り替わりは離した時です。
+      </li>
+      <li>
+        過電流が流れても出力が切れます。負荷を軽くした後にOUT`PUTスイッチをもう一度押して復旧してください。
+      </li>
+    </ul>
+    </p>
+    <h2>回路図</h2>
+    <a href="schematic.pdf">回路図</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="copylights">
+      <small>&copy; 2024 みなゆらぼ</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>
