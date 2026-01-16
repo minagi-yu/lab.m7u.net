@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="top.css">
   <link rel="icon" href="favicon.ico">
   <title>みなゆらぼ</title>
@@ -12,10 +14,31 @@
 
 <body>
 
-  <header class="site-header">
-    <a class="site-logo" href="/">
-      <img src="minayulab.svg" alt="みなゆらぼ" />
-    </a>
+  <header>
+    <div class="menu-bar">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label class="menu-button" for="menu-toggle" aria-label="メニューを開閉">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <a class="menu-site-logo" href="/">
+        <img src="minayulab.svg" alt="みなゆらぼ">
+      </a>
+      <nav class="menu-links" aria-label="サイトメニュー">
+        <ul class="menu-page-links">
+          <!-- <li><a href="https://m7u.net/profile.html">プロフィール</a></li> -->
+        </ul>
+        <ul class="menu-site-links">
+          <li><a href="https://m7u.net/"><img src="m7unet.svg" alt="m7u.net みなゆねっと"></a></li>
+          <li><a href="https://blog.m7u.net/">blog.m7u.net</a></li>
+        </ul>
+        <ul class="menu-social-links">
+          <!-- <li><a href="https://x.com/minagi_yu"><img src="x.svg" alt="x"></a></li> -->
+          <!-- <li><a href="https://github.com/minagi-yu"><img src="github.svg" alt="GitHub"></a></li> -->
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="site-contents">
@@ -106,9 +129,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="copylights">
-      <small>&copy; 2024 みなゆらぼ</small>
-    </div>
+    <p>&copy; みなゆらぼ</p>
   </footer>
 
 </body>
