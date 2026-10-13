@@ -19,6 +19,10 @@ img {
   margin: auto;
 }
 
+.site-contents {
+  min-width: 0;
+}
+
 .product-title img {
   margin: 3rem;
   box-sizing: border-box;
@@ -117,10 +121,24 @@ hr {
   border-bottom: 1px solid var(--color-grey);
 }
 
+.table-container {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
 table {
   border-collapse: collapse;
   margin: auto;
   margin-bottom: 1rem;
+}
+
+.table-container > table {
+  width: max-content;
+  min-width: 100%;
+  margin-bottom: 0;
+  white-space: nowrap;
 }
 
 table caption {
